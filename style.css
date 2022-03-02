@@ -107,13 +107,14 @@ p, a {
     transform: translateY(-50%);
 
 }
+
 #ads {
     width: 85%;
-    margin: 4em, auto;
+    margin: 4em auto;
 
 }
 
-#ads-item {
+.ads-item {
     height: 350px;
     width: 48.5%;
     float: left;
@@ -126,9 +127,9 @@ p, a {
 
 }
 
-#ads-items1 {
-    margin-right:3%;
-    background-image: url('image/ads-img1.jpg');
+.ads-item1 {
+    margin-right: 3%;
+    background-image: url('images/ads-img1.jpg');
 }
 
 .ads-item2 {

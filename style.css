@@ -316,12 +316,13 @@ p, a, span {
 #reservation {
     width: 85%;
     margin: 2em auto;
-    
+    overflow: auto;
 }
+
 #reservation form :nth-child(1) {
     margin-right: 1%;
-
 }
+
 
 .form-column {
     width: 49.5%;
@@ -329,9 +330,8 @@ p, a, span {
     float:left;
     height: 650px;
     padding: 2em;
-    
-
 }
+
 
 form label, form input, .form-column p, form select{
     font-family: 'Raleway', sans-serif;
@@ -342,7 +342,7 @@ form label, form input, .form-column p, form select{
     display: block;
 }
 
-form label .form-column p {
+form label, .form-column p {
     font-weight:700;
     padding-left: 0;
     padding: 0 0 0.5em 0;
@@ -382,16 +382,19 @@ form input, form select, form textarea{
     background-image: url('images/reservation-cards.png');
     background-repeat: no-repeat;
     background-size: contain;
+    display: block;
+    margin:auto;
 
 }
 
-#agreement input, #agreenment label {
+#agreement input, #agreement label {
+    padding: 0;
     width: auto;
     text-align: left;
     display: inline;
 }
 
-form input [type="submit"] {
+form input[type="submit"] {
     width: 100%;
     padding: 1em;
     text-align: center;

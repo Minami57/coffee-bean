@@ -194,31 +194,30 @@
       </div>
 
 
-
-
       <div class="section-header">
-          <h2>Reservation Form</h2>
-          <hr>
-      </div>
+        <h2>Reservation Form</h2>
+        <hr>
+    </div>
 
-      <div id="reservation">
-            <div class="form-column">
+    <div id="reservation">
+       <form action="">
+           <div class="form-column">
+
                 <label for="full_name">Full Name</label>
-                 <input type="text" name="full_name" id="full_name" required placeholder="Lastname.Firstname">
-                 <label for="email_ad">Email Address</label>
-                 <input type="text" name="email_ad" id="email_ad" required placeholder="mail@mail.com">
-                 <label for="phone_num">Phone Number </label>
-                 <input type="text" name="phone_num" id="phone_num" required placeholder="(+63) 912345678">
-            </div>
+                <input type="text" name="full_name" id="full_name" placeholder="Last Name, First Name">
+                <label for="email_ad">Email Address</label>
+                <input type="email" name="email_ad" id="email_ad" placeholder="mail@mail.com">
+                <label for="phone_num">Phone Number</label>
+                <input type="text" name="phone_num" id="phone_num" placeholder="(+63)912345678">
 
-            <p>Reservation Details</p>
-            <div class="form-column">
+                <p>Reservation Details</p>
+
                 <label for="guest_num">Number of Guest</label>
                 <select name="guest_num" id="guest_num">
-                  <option value="1">1</option>
-                  <option value="2">2</option> 
-                  <option value="3">3</option>  
-                  <option value="4">4</option>   
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
                 </select>
 
                 <label for="reserve_date">Reservation Date</label>
@@ -226,35 +225,36 @@
 
                 <p>Reservation Time</p>
                 <div id="reserve-time">
-                   <input type="radio" name="reserve_time" id="reserve_am">
-                   <label for="reserve_am">Morning</label>
-                   <input type="radio" name="reserve_time" id="reserve_pm">
-                   <label for="reserve_pm">Afternoon</label>
-                   <input type="radio" name="reserve_time" id="reserve_night">
-                   <label for="reserve_night">Night</label>
+                    <input type="radio" name="reserve_time" id="reserve_am">
+                    <label for="reserve_am">Morning</label>
+                    <input type="radio" name="reserve_time" id="reserve_pm">
+                    <label for="reserve_pm">Afternoon</label>
+                    <input type="radio" name="reserve_time" id="reserve_night">
+                    <label for="reserve_night">Night</label>
                 </div>
-            </div>
+           </div>
+           <div class="form-column">
+               <label for="request">Additional Request</label>
+               <textarea name="request" id="request" cols="30" rows="10"></textarea>
 
-            <div class="form-column">
-                <label for="request">Addtional Request</label>
-                <textarea name="request" id="request" cols="30" rows="10"></textarea>
+               <h3>Payment</h3>
 
-                <h3>Payment</h3>
+               <p>Payment Accepted Cards</p>
 
-                <p>Payment Accepted Cards</p>
+               <label for="card_name">Full Name</label>
+               <input type="text" name="card_name" id="card_name" placeholder="John Doe">
+               <label for="card_number">Credit Card Number</label>
+               <input type="number" name="card_number" id="card_number" placeholder="1234567890">
 
-                <label for="card_name">Full Name</label>
-                <input type="text" name="card_nam" id="card_name" required placeholder="John Doe">
-                <label for="card_number">Credit Card Number</label>
-                <input type="text" name="card_number" id="card_number" required placeholder="1234567890">
-                <div id="agreement">
-                   <input type="checkbox" name="check_terms" id="check_terms">
-                   <label for="check_terms">I agree to the Terms and Conditions.</label>
+               <div id="agreement">
+                    <input type="checkbox" name="check_terms" id="check_terms">
+                    <label for="check_terms">I agree to the Terms and Conditions</label>
                 </div>
-                <input type="submit" value="Send">
+               <input type="submit" value="Send">
             </div>
-        </div>
-    </form>
+       </form>
+    </div>
+   
         
 </body>
 </html>
